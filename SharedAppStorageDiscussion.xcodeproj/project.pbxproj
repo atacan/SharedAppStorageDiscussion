@@ -11,6 +11,7 @@
 		795B53182B913DF700A0BA76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B53172B913DF700A0BA76 /* ContentView.swift */; };
 		795B531A2B913DF900A0BA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795B53192B913DF900A0BA76 /* Assets.xcassets */; };
 		795B531D2B913DF900A0BA76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795B531C2B913DF900A0BA76 /* Preview Assets.xcassets */; };
+		795B53262B913E4B00A0BA76 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 795B53252B913E4B00A0BA76 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795B53262B913E4B00A0BA76 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SharedAppStorageDiscussion;
+			packageProductDependencies = (
+				795B53252B913E4B00A0BA76 /* ComposableArchitecture */,
+			);
 			productName = SharedAppStorageDiscussion;
 			productReference = 795B53122B913DF700A0BA76 /* SharedAppStorageDiscussion.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 795B53092B913DF700A0BA76;
+			packageReferences = (
+				795B53242B913E4B00A0BA76 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 795B53132B913DF700A0BA76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		795B53242B913E4B00A0BA76 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = "shared-state-beta";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		795B53252B913E4B00A0BA76 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 795B53242B913E4B00A0BA76 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 795B530A2B913DF700A0BA76 /* Project object */;
 }
